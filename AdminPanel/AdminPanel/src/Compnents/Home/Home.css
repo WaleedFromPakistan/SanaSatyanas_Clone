@@ -1,0 +1,15 @@
+.Home{
+    width: 86%;
+    height: 86vh;
+    margin-top: -12px;    
+    background-color: #13a487;
+
+}
+.Home>h1{
+text-align: center;
+padding-top: 22% ;
+padding-left: 5%;
+color: white;
+font-family: sans-serif;
+
+}

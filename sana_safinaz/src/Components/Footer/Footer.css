@@ -1,0 +1,276 @@
+.Footer{
+    margin-top: 8%;
+}
+.unorder{
+    display: flex;
+    justify-content: space-around;
+    gap: 90px;
+    align-items: center;
+    padding: 3px 3px;
+    width: 95%;
+   
+}
+
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+li p{
+    margin-top: 10%;
+    font-size: 18px;
+    font-weight: 600;
+}
+.icons {
+    border: 2px solid black;
+    border-radius: 56px;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+}
+
+.icons img{
+    height: 35px;
+    width:35px;
+}
+
+.Container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background-color: white;
+    font-family: 'Poppins';
+    max-width: 100%; 
+    margin: 0 auto;
+    gap: 30px; 
+}
+
+
+.column {
+    width: 100%;
+   
+    padding: 0 0px;
+}
+.column-title p{
+    font-size: 14px;
+}
+
+.column:last-child {
+    margin-right: 0;
+}
+
+
+.title p {
+    font-size: 18px; 
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+
+.title ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.title li {
+    margin-bottom: 10px; 
+    font-size: 11px;
+}
+
+.title ul li a {
+    text-decoration: none;
+    font-size: 1em;
+    line-height: 1.5; 
+   font-weight: normal;
+    
+}
+
+.title ul li a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+
+.column ul li {
+    line-height: 1.5; 
+    font-size: 16px;
+    font-weight: normal;
+    display: block;
+    
+    
+}
+
+.column ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.column ul li a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+/* Signup form styling */
+.signup-area {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px; /* Adjusted margin */
+}
+
+.signup-area form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signup-area input[type="email"] {
+    padding: 10px;
+    border: 1px solid black;
+    background-color: #000;
+    color: white;
+    border-radius: 50px 0px 0px 50px;
+    outline: none;
+    width: 230px; /* Reduce width for better fit */
+    font-size: 14px;
+    box-shadow: none;
+    height: 52px;
+    margin-bottom: 13px;
+}
+
+.signup-area button {
+    background-color: rgb(180, 178, 178);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0px 50px 50px 0px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    height: 52px;
+    width: 130px;
+    margin-bottom: 13px;
+}
+
+.signup-area button:hover {
+    background-color: gray;
+}
+
+/* Talk To Us section */
+.signup-area .title h2 {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.signup-area div {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: normal;
+    color: black;
+}
+
+/* Footer link alignment */
+.column ul {
+    line-height: 1.5;
+}
+
+/* Footer container adjustments */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+/* Footer items alignment */
+.footer .footer-item {
+    flex-basis: calc(25% - 20px); /* Align footer items in rows of four */
+    margin-bottom: 20px;
+}
+
+.unorder1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 3px;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons3 {
+    border: 2px solid  rgb(211, 207, 207);
+    border-radius: 56px;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    background-color:rgb(211, 207, 207) ;
+}
+.Payment-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%;
+    padding: 20px 0; 
+    box-sizing: border-box; 
+    font-family: Poppins;
+}
+
+ .payment-area {
+    margin-left: 35px; 
+}
+
+.payment-area p {
+    margin-right: 20px; 
+    font-size: 14px;
+}
+
+
+.payment-icons ul {
+    display: flex;
+    gap: 15px; 
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+
+.payment-icons img {
+    width: 80px; 
+}
+
+
+.security {
+    margin-right: 95px;
+}
+
+.security p {
+    margin-right: 20px; 
+    font-size: 14px;
+}
+
+.security-icon ul {
+    display: flex;
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.security-icon img {
+    width: 140px; 
+}  

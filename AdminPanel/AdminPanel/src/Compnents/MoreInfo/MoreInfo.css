@@ -1,0 +1,16 @@
+.MoreInfo {
+    width: 70%;
+    height: 72vh;
+}
+#More_info{
+    width: 50%;
+}
+.MoreInfo-table {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+tr{
+    width: 50%;
+}

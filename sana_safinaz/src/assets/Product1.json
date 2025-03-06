@@ -1,0 +1,507 @@
+[
+    {   
+        "id":1,
+        "title":"Table Ware",
+        "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/table-ware.jpg",
+        "category":"table_ware",
+        "back_ground_img":"https://www.sanasafinaz.com/media/wysiwyg/home_category/tableware/table-ware.jpg",
+        "content":"Add a warm and welcoming touch to your home with our newest range of Dinnerware. An artful curation of dining sets to add the perfect touch of love to your next celebration or meal with loved ones. Mix and match different styles to create something unique and personalized.",
+        "sub_categories":[
+            {
+                "id":1,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/tableware/NUT-BOWL-21-11-2023.jpg",
+                "title":"Nut Bowl",
+                "category":"nut_bowl"
+            },
+            {
+                "id":2,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/tableware/royal-blue.jpg",
+                "title":"Royal Blue",
+                "category":"royal_blue"
+            },
+            {
+                "id":3,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/tableware/royal-voyage.jpg",
+                "title":"Royal Voyage",
+                "category":"royal_voyage"
+            },
+            {
+                "id":4,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/tableware/table-runner.jpg",
+                "title":"Table Runner",
+                "category":"table_runner"
+            },
+            {
+                "id":5,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/tableware/table-mats.jpg",
+                "title":"Table Mats",
+                "category":"table_mats"
+            },
+            {
+                "id":6,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/tableware/Coasters.jpg",
+                "title":"Coaster",
+                "category":"coaster"
+            },
+            {
+                "id": 7,
+                "image": "https://www.sanasafinaz.com/media/wysiwyg/home_category/tableware/Mug-Img.jpg",
+                "title": "Mugs",
+                "category":"mugs"
+            },
+            {
+                "id": 8,
+                "image": "https://www.sanasafinaz.com/media/wysiwyg/home_category/tableware/snack-plates-updated.jpg",
+                "title": "Snack Plate",
+                "category":"snack_plate"
+            },
+            {
+                "id": 9,
+                "image": "https://www.sanasafinaz.com/media/wysiwyg/home_category/tableware/cake-stand.jpg",
+                "title": "Cake Stand",
+                "category":"cake_stand"
+            },
+            {
+                "id": 10,
+                "image": "https://www.sanasafinaz.com/media/wysiwyg/home_category/tableware/Napkins.jpg",
+                "title": "Place Mats",
+                "category":"place_mats"
+            },
+            {
+                "id": 11,
+                "image": "https://www.sanasafinaz.com/media/wysiwyg/home_category/tableware/Napkin-Rings.jpg",
+                "title": "Napkin Ring",
+                "category":"napkin_ring"
+            },
+            {
+                "id": 12,
+                "image": "https://www.sanasafinaz.com/media/wysiwyg/home_category/tableware/Placement_Mats_2_.jpg",
+                "title": "Napkins",
+                "category":"napkins"
+            },
+            {
+                "id": 13,
+                "image": "https://www.sanasafinaz.com/media/wysiwyg/home_category/tableware/tissue-paper-img.jpg",
+                "title": "Tissue Paper",
+                "category":"tissue_papper"
+            },
+            {
+                "id": 14,
+                "image": "https://www.sanasafinaz.com/media/wysiwyg/home_category/tableware/Tea-sets.jpg",
+                "title": "Tea Sets",
+                "category":"tea_sets"
+            },
+            {
+                "id": 15,
+                "image": "https://www.sanasafinaz.com/media/wysiwyg/home_category/tableware/Condiment-Plate-Img.jpg",
+                "title": "Condiment Plate",
+                "category":"condiment_plate"
+            },
+            {
+                "id": 16,
+                "image": "https://www.sanasafinaz.com/media/wysiwyg/home_category/tableware/Tray-Img.jpg",
+                "title": "Tray",
+                "category":"tray"
+            },
+            {
+                "id": 17,
+                "image": "https://www.sanasafinaz.com/media/wysiwyg/home_category/tableware/quarter-plates-inner-image.jpg",
+                "title": "Quater Plates",
+                "category":"quater_plates"
+            },
+            {
+                "id": 18,
+                "image": "https://www.sanasafinaz.com/media/wysiwyg/home_category/tableware/candy-jars-inner-image.jpg",
+                "title": "Candy Jar",
+                "category":"candy_jar"
+            }
+
+        
+        ]
+
+    },
+    {   
+        "id":2,
+        "title":"Decorative Object",
+        "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/decorative-objet.jpg",
+        "category":"Decorative_Object",
+        "back_ground_img":"https://www.sanasafinaz.com/media/wysiwyg/home_category/decorative_object/decorative-object.jpg",
+        "content":"",
+        "sub_categories":[
+            {
+                "id": 1,
+                "image": "https://www.sanasafinaz.com/media/wysiwyg/home_category/decorative_object/Storage-Basket-Img.jpg",
+                "title": "Storage Baskets",
+                "category":"storage_baskets"
+            },
+            {
+                "id": 2,
+                "image": "https://www.sanasafinaz.com/media/wysiwyg/home_category/decorative_object/Tissue_Boxes.jpg",
+                "title": "Objects",
+                "category":"objects"
+            },
+            {
+                "id": 3,
+                "image": "https://www.sanasafinaz.com/media/wysiwyg/home_category/decorative_object/Coin-Tray-Img.jpg",
+                "title": "Coin Tray",
+                "category":"coin_tray"
+            },
+            {
+                "id": 4,
+                "image": "https://www.sanasafinaz.com/media/wysiwyg/home_category/decorative_object/Ashtray-Img.jpg",
+                "title": "Ash trays",
+                "category":"ash_trays"
+            },
+            {
+                "id": 5,
+                "image": "https://www.sanasafinaz.com/media/wysiwyg/home_category/decorative_object/balsa-tray.jpg",
+                "title": "Balsa Tray",
+                "category":"balsa_tray"
+            },
+            {
+                "id": 6,
+                "image": "https://www.sanasafinaz.com/media/wysiwyg/home_category/decorative_object/platter.jpg",
+                "title": "Platter",
+                "category":"platter"
+            },
+            {
+                "id": 7,
+                "image": "https://www.sanasafinaz.com/media/wysiwyg/home_category/decorative_object/leather-tray.jpg",
+                "title": "Leather Tray",
+                "category":"leather_tray"
+            },
+            {
+                "id": 8,
+                "image": "https://www.sanasafinaz.com/media/wysiwyg/home_category/decorative_object/trinkettray1.jpg",
+                "title": "Trinket Tray",
+                "category":"trinket_tray"
+            }
+
+        
+        ]
+
+    },
+    {   
+        "id":3,
+        "title":"Cushions",
+        "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/Cushion-Img.jpg",
+        "category":"Cushions",
+        "back_ground_img":"https://www.sanasafinaz.com/media/wysiwyg/home_category/cushions/Cushion-Banner-Img.jpg",
+        "content":"",
+        "sub_categories":[
+            {
+                "id": 1,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/cushions/HM-24-CSN-007.jpg",
+                "title":"Mighty Zebra",
+                "price":"1,499.00",
+                "category":"mighty_zebra"
+
+            },
+            {
+                "id": 2,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/cushions/HM-24-CSN-008.jpg",
+                "title":"White Stallion",
+                "price":"1,539.00",
+                "category":"white_stallion"
+
+            },
+            {
+                "id": 3,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/cushions/HM-24-CSN-001.jpg",
+                "title":"Miss Ostrich",
+                "price":"2,499.00",
+                "category":"miss_ostrich"
+            },
+            {
+                "id": 4,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/cushions/HM-24-CSN-002.jpg",
+                "title":"Warrior",
+                "price":"2,799.00",
+                "category":"warrior"
+            },
+            {
+                "id": 5,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/cushions/HM-24-CSN-003.jpg",
+                "title":"Suzani Tiger",
+                "price":"2,799.00",
+                "category":"suzani_tiger"
+            },
+            {
+                "id":6,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/cushions/HM-24-CSN-004.jpg",
+                "title":"Indian Whimsy",
+                "price":"2,999.00",
+                "category":"indian_whismy"
+            },
+            {
+                "id":7,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/cushions/HM-24-CSN-005.jpg",
+                "title":"Shahjahan",
+                "price":"2,499.00",
+                "category":"shahjahan"
+            }
+
+        
+        ]
+
+    },
+    {   
+        "id":4,
+        "title":"Bath & Me",
+        "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/bath-me.jpg",
+        "category":"Bath_&_Me",
+        "back_ground_img":"https://www.sanasafinaz.com/media/wysiwyg/home_category/bath_and_me/bath-me.jpg",
+        "content":"Ease into the day or wind down at night with our cozy, breathable and relaxed loungewear that you can't wait to slip on. From easy robes and cosy slippers, to effortless night suits, our selection covers it all!",
+        "sub_categories":[
+            {
+                "id":1,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/bath_and_me/makeup-pouch.jpg",
+                "title":"Makeup Pouch",
+                "category":"makeup_pouch",
+                "price":""
+            },
+            {
+                "id":2,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/bath_and_me/Night-Suit-Img.jpg",
+                "title":"Night Suit",
+                "category":"night_suit",
+                "price":""
+            },
+            {
+                "id":3,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/bath_and_me/robes.jpg",
+                "title":"Robes",
+                "category":"robes",
+                "price":""
+            },
+            {
+                "id":4,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/bath_and_me/slippers.jpg",
+                "title":"Slippers",
+                "category":"slippers",
+                "price":""
+            },
+            {
+                "id":5,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/bath_and_me/Bathroom-set-Img.jpg",
+                "title":"Powder Bathroom Set",
+                "category":"powder_bathroom_set",
+                "price":""
+            },
+            {
+                "id":6,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/bath_and_me/Wash-Cloth-Img.jpg",
+                "title":"Wash Cloth Set",
+                "category":"wash_cloth_set",
+                "price":""
+            }
+        ]
+
+    },
+    {   
+        "id":5,
+        "title":"Candles",
+        "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/Candle-Img.jpg",
+        "category":"Candles",
+        "back_ground_img":"https://www.sanasafinaz.com/media/wysiwyg/home_category/candles/Candle-Banner-Img.jpg",
+        "content":"An olfactory delight awaits in our collection of candles, curated to cater to every mood and occasion. Spread them around your house for the ultimate fragrance experience.",
+        "sub_categories":[
+            {
+                "id":1,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/candles/HM-CN-CN24-01-08-12-2023-Updated.jpg",
+                "title":"CANDLE (JAPANESE GARDEN)",
+                "category":"japanese_garden",
+                "price":"13600"
+            },
+            {
+                "id":2,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/candles/HM-CN-CN23-04.jpg",
+                "title":"CANDLE (SAND AND SEA SALT)",
+                "category":"sea_and_sea_salt",
+                "price":"2,369"
+            },
+            {
+                "id":3,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/candles/HM-CN-CN23-03.jpg",
+                "title":"CANDLE (MOTIA)",
+                "category":"motia",
+                "price":"2,369"
+            },
+            {
+                "id":4,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/candles/HM-CN-CN23-02.jpg",
+                "title":"CANDLE (COTTON LINEN)",
+                "category":"cotton_linen",
+                "price":"2,369"
+            },
+            {
+                "id":5,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/candles/HM-CN-CN23-01.jpg",
+                "title":"CANDLE (PATCHOULI & MUSK)",
+                "category":"patchouli_musk",
+                "price":"2,369"
+            }
+        ]
+
+    },
+    {   
+        "id":6,
+        "title":"Janemaz",
+        "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/janemaz.jpg",
+        "category":"Janemaz",
+        "back_ground_img":"https://www.sanasafinaz.com/media/wysiwyg/home_category/cushions/Cushion-Banner-Img.jpg",
+        "content":"",
+        "sub_categories":[
+            {
+                "id":1,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/janemaz/HM-JM-JM23-02.jpg",
+                "title":"Janemaz",
+                "category":"janemaz",
+                "price":"6,899"
+            },
+            {
+                "id":2,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/janemaz/HM-JM-JM23-01.jpg",
+                "title":"Janemaz",
+                "category":"janemaz",
+                "price":"6,899"
+            }
+        ]
+
+    },
+    {   
+        "id":7,
+        "title":"Beach",
+        "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/beach.jpg",
+        "category":"Beach",
+        "back_ground_img":"https://www.sanasafinaz.com/media/wysiwyg/home_category/cushions/Cushion-Banner-Img.jpg",
+        "content":"",
+        "sub_categories":[
+            {
+                "id":1,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/beach/tote-bag.jpg",
+                "title":"Tote Bag",
+                "category":"tote_bag",
+                "price":""
+            },
+            {
+                "id":2,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/beach/towel.jpg",
+                "title":"Towel",
+                "category":"towel",
+                "price":""
+            }
+        ]
+
+    },
+    {   
+        "id":8,
+        "title":"Heritage",
+        "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/Heritage-21-11-2023.jpg",
+        "category":"Heritage",
+        "back_ground_img":"https://www.sanasafinaz.com/media/wysiwyg/home_category/heritage/Heritage-Banner-22-11-2023.jpg",
+        "content":"Within the heart of our HERITAGE collection, the story and artistry of local artisans lies, transforming every corner into a poetic ode to our cultural heritage. These products are exquisite ornaments designed to adorn and beautify any space with elegance.",
+        "sub_categories":[
+            {
+                "id":1,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/heritage/HM24HTG016.JPG",
+                "title":"TALYA (Stool)",
+                "category":"talya_stool",
+                "price":"9,999"
+            },
+            {
+                "id":2,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/heritage/HM24HTG012.jpg",
+                "title":"IRAZ (PLATTER)",
+                "category":"iraz_platter",
+                "price":"5,999"
+            },
+            {
+                "id":3,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/heritage/HM24HTG013.jpg",
+                "title":"Mirac (PLATTER)",
+                "category":"mirac_platter",
+                "price":"5,999"
+            },
+            {
+                "id":4,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/heritage/HM24HTG015.jpg",
+                "title":"AYLA (Stool)",
+                "category":"ayla_stool",
+                "price":"9,999"
+            }
+        ]
+
+    },
+    {   
+        "id":9,
+        "title":"Stationery",
+        "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/stationery.jpg",
+        "category":"Stationary",
+        "back_ground_img":"https://www.sanasafinaz.com/media/wysiwyg/home_category/stationery/stationery-banner.jpg",
+        "content":"",
+        "sub_categories":[
+            {
+                "id": 1,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/stationery/Envelops.jpg",
+                "title":"Gift Cards",
+                "category":"gift_cards",
+                "price":""
+            },
+            {
+                "id":2,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/stationery/Gift-box-Img.jpg",
+                "title":"Gift boxes",
+                "category":"gift_boxes",
+                "price":""
+            }
+            ,{
+                "id":3,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/stationery/wrapping-paper.jpg",
+                "title":"Wrapping Paper",
+                "category":"wrapping_paper",
+                "price":""
+            },
+            {
+                "id":4,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/stationery/Note-book-Img.jpg",
+                "title":"Notebooks",
+                "category":"notebooks",
+                "price":""
+            },
+            {"id":5,
+             "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/stationery/Gift-Bag-Img.jpg",
+             "title":"Gift Bags",
+             "category":"gift_bags",
+             "price":""
+            }
+        ]
+
+    },
+    {   
+        "id":10,
+        "title":"Bedding",
+        "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/bedding_inner_image.jpg",
+        "category":"Bedding",
+        "back_ground_img":"https://www.sanasafinaz.com/media/wysiwyg/home_category/bedding/bedding_inner_banner2.jpg",
+        "content":"",
+        "sub_categories":[
+            {
+                "id": 1,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/bedding/HM24DCS001.jpg",
+                "title":"Bedding",
+                "category":"bedding",
+                "price":"14999"
+            },
+            {
+                "id":2,
+                "image":"https://www.sanasafinaz.com/media/wysiwyg/home_category/bedding/HM24DCS002.jpg",
+                "title":"Bedding",
+                "category":"bedding",
+                "price":"14999"
+            }
+        ]
+
+    }
+
+]

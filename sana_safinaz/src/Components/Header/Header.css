@@ -1,0 +1,154 @@
+.header{
+    height: 130px;
+    width: 100%;
+    background: #FFFFFF;
+    
+}
+.header-upper{
+    width: 100%;
+    background: #BBBBBB;
+    height: 20%;
+}
+.header-upper p{
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    padding: 8px;
+   
+}
+.header-lower{
+    display: grid;
+    grid-template-columns: 3fr 6fr 3fr;
+  
+    background-color: white;
+}
+#logo{
+    margin-left: 20%;
+    margin-top: 19px;
+    
+}
+.header-lower-left > .header-lower-left-burger-btn {
+   padding-top: 30px;
+    padding-left: 68px;
+}
+.header-lower-left-burger-btn :hover{
+    cursor: pointer;
+}
+.header-lower-middle{
+    width: 698px;
+    
+}
+.header-lower-right{
+    display:flex;
+    justify-content: space-around;
+    padding-right: 4px;
+    width: 380px;
+    height: 100px;
+    font-size: 11px;
+  
+}
+
+.header-lower-right-contact{
+    padding-top:5px;
+    
+    flex-direction: column;
+}
+
+
+.header-lower-right  div{
+    text-align: center;
+    height: 40px;
+    width: 100%;
+}
+.header-lower-right-contact  button{
+    background-color: #ffffff;
+    border: none;
+    height: 30px;
+    width: 30px;
+    padding-left: 15px;
+    margin-top: -10px;
+    margin-bottom: 6px;
+}
+.btn_inside{
+    display: flex;
+    flex-direction: column;
+}
+.dropdown-menu  {
+    background-color: bisque;
+}
+.dropdown-menu h2{
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+}
+.dropdown-menu li{
+    font-size: 14px;
+    padding: 5px;
+}
+.btn_inside  button:hover{
+    background-color: white;
+}
+
+.header-lower-right div:hover{
+    cursor: pointer;
+}
+.dropdown-toggle ::after{
+    height: 20px;
+}
+.dropdown-menu{
+    width: 280px;
+    height: 250px;
+    line-height: 1.6;
+
+}
+.dropdown-menu img{
+    width: 30px;
+    height: 20px;
+}
+.dropdown-menu a{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+} 
+
+
+.dropdown-menu a:hover{
+    color: red;
+}
+.dropdown-menu span{
+    font-size: 14px;
+    font-weight: 600;
+}
+ .header-lower-right-search ,
+ .header-lower-right-whatsApp,
+ .header-lower-right-contact,
+ .header-lower-right-tracking
+{
+    margin-top: 5%;
+
+}
+.header-lower-right-country{
+    margin-top: 6%;
+}
+.header-lower-right-cart
+{
+    margin-top: 2.5%;
+}
+
+a{
+    
+    color: red;
+}
+.counter{
+    height: 15px;
+    width: 15px;
+    border-radius: 90%;
+    margin-bottom: -6px;
+    margin-left: 55%;
+    color: white;
+    background-color: red;
+}
+
+.display{
+    display: none;
+}

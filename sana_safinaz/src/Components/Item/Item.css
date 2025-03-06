@@ -1,0 +1,24 @@
+.Item{
+    
+    padding: 10px;
+    gap: 100;
+
+}
+.Item:hover{
+    cursor: pointer;
+    transition: 0.8s;
+    transform:scale(1.1) ;
+}
+.Item-image img{
+    height: 340px;
+    width: 320px;
+}
+
+.Item-title p{
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+.disapear{
+    display: none;
+}

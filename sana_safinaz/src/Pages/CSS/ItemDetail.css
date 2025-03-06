@@ -1,0 +1,293 @@
+.item-detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.product-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 594px;
+    margin-left: 6%;
+}
+
+.product-images img {
+    width: 100px;
+    height: 140px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.product-images img:hover {
+    border: 1px solid tomato;
+}
+
+.product-logo {
+    display: flex;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-bottom: 280px;
+    position: relative;
+}
+
+.Discount {
+    position: absolute;
+    top: 18px;
+    right: 38px;
+    background-color: #000;
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    font-size: 17px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.product-logo img {
+    width: 96%;
+    height: 140%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.zoom-preview {
+    position: absolute;
+    top: 0;
+    left: 100%; /* Position it to the right of the main image */
+    width: 100%; /* Same width as the main image */
+    height: 100%; /* Same height as the main image */
+    border: 1px solid #ddd;
+    overflow: hidden;
+    display: none; /* Hide by default */
+    z-index: 10;
+}
+
+.zoom-preview.visible {
+    display: block;
+}
+
+.product-logo:hover+.zoom-preview {
+    display: block;
+    /* Show zoom preview on hover */
+}
+
+.zoom-preview img {
+    position: absolute;
+    width: 300%;
+    /* Scale the image to create the zoom effect */
+    height: 300%;
+    object-fit: cover;
+}
+
+.product-detail {
+    width: 140%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.product-detail-0 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.product-detail-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.product-detail-1 .id-1 {
+    font-size: 24px;
+}
+
+.product-detail-1 .id-2:hover {
+    color: red;
+}
+
+.product-detail-2 p {
+    font-size: 24px;
+}
+
+.product-detail-3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.product-detail-3 .id-3 {
+    font-size: 24px;
+}
+
+.product-detail-3 .id-4 {
+    font-size: 24px;
+    text-decoration: line-through;
+}
+
+.product-detail hr {
+    margin-top: 10px;
+}
+
+.product-detail button {
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 13px;
+    width: 100px;
+    height: 38px;
+    margin-top: 20px;
+}
+
+.product-detail button:hover {
+    background-color: black;
+}
+
+.product-detail-4 img {
+    margin-top: 30px;
+    height: 35px;
+}
+
+.product-detail-5 {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.product-detail-5 strong {
+    color: rgb(68, 68, 224);
+}
+
+.product-detail-5 p {
+    width: 100%;
+    border-bottom: 1px solid rgb(180, 172, 172);
+}
+
+.product-detail-6 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.product-detail-6 strong {
+    font-size: 19px;
+}
+
+.product-detail-6 .size_container {
+    gap: 5px;
+}
+
+.product-detail-6 .size_container div {
+    cursor: pointer;
+}
+
+.product-detail-7 {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.product-detail-7 .add-minus {
+    display: flex;
+    align-items: center;
+}
+
+.add-minus div {
+    border: 1px solid rgb(148, 143, 143);
+}
+
+.add-minus .minus p {
+    display: block;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bolder;
+    padding: 12px 12px;
+    margin-bottom: -3px;
+    cursor: pointer;
+}
+
+.add-minus .count p {
+    display: block;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bolder;
+    padding: 12px 12px;
+    margin-bottom: -3px;
+    cursor: pointer;
+}
+
+.add-minus .plus p {
+    display: block;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bolder;
+    padding: 12px 12px;
+    margin-bottom: -3px;
+    cursor: pointer;
+}
+
+.product-detail-7 .add-button {
+    bottom: 0;
+    left: 0;
+    width: 60%;
+    text-align: center;
+    background-color: #2b2a2a;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.product-detail-7 .add-button h5 {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.product-detail-7 .add-button:hover {
+    background-color: black;
+}
+
+
+.product-detail-8 {
+    margin-top: 30px;
+}
+
+.product-detail-8 #para-1 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 15px;
+    padding-top: 20px;
+}
+
+.product-detail-8 #para-2 {
+    border: 1px solid gray;
+    padding: 15px;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.product-detail-8 #para-2 strong {
+    font-weight: bold;
+}
+
+.Details {
+    text-align: center;
+    font-size: 39px;
+    font-weight: 500;
+}
+
+.cards-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

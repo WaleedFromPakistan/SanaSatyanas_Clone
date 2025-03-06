@@ -1,0 +1,27 @@
+.ListAllProduct{
+    width: 80%;
+    height: 82vh;
+}
+.ListAllProduct >h1 {
+    text-align: center;
+}
+tr{
+    width: 100%;
+}
+#btn {
+    background-color: white;
+    border: none;
+    margin-left: -250px ;
+}
+#btn1{
+    background-color: white;
+    border: none;
+    margin-left: -130px ;
+}
+
+thead{
+    text-align: center;
+}
+.table-group-divider{
+    text-align: center;
+}
