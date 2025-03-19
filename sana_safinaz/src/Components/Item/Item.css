@@ -13,11 +13,17 @@
     height: 340px;
     width: 320px;
 }
-
+p{
+    margin-bottom: 6px;
+}
 .Item-title p{
     font-size: 16px;
     font-weight: 400;
     
+}
+.Item-price p{
+    font-size: 16px;
+ font-weight: 600;   
 }
 .disapear{
     display: none;

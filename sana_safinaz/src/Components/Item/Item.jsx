@@ -11,6 +11,9 @@ const Item = (props) => {
       <div className='Item-title'>
         <p>{props.title}</p>
       </div>
+      <div className='Item-price'>
+        <p>{props.price ?`PKR. ${props.price}`: ""}</p>
+      </div>
 
     </div>
 

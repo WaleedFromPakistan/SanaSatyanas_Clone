@@ -1,0 +1,15 @@
+.add-category{
+    width: 80%;
+    margin: 1% auto auto auto;
+    background-color: #F9FBFA;
+    padding: 5%;
+}
+.add-category h1{
+    text-align: center;
+    margin-top: -60px;
+    margin-bottom: 3%;
+    font-weight:500 ;
+}
+span{
+    color: red;
+}

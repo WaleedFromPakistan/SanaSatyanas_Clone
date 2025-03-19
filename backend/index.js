@@ -36,6 +36,11 @@ const productSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    back_image:{
+        type: String,
+        required:true
+    }
+    ,
     img_main: {
         type: String,
         required: true
@@ -188,6 +193,7 @@ app.post('/addAccessories', async (req, res) => {
             name:req.body.name,
             title: req.body.title,
 
+            back_image:req.body.back_image,
             img_main: req.body.img_main,
             img1:req.body.img1,
             img2:req.body.img2,

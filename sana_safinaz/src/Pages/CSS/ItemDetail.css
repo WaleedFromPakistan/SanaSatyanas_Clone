@@ -28,8 +28,8 @@
 .product-logo {
     display: flex;
     overflow: hidden;
-    margin-left: 20px;
-    margin-bottom: 280px;
+    margin-left: 1%;
+    margin-bottom: 236px;
     position: relative;
 }
 
@@ -50,40 +50,10 @@
 }
 
 .product-logo img {
-    width: 96%;
-    height: 140%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+   width: 600px;
+   height: 800px;
 }
 
-.zoom-preview {
-    position: absolute;
-    top: 0;
-    left: 100%; /* Position it to the right of the main image */
-    width: 100%; /* Same width as the main image */
-    height: 100%; /* Same height as the main image */
-    border: 1px solid #ddd;
-    overflow: hidden;
-    display: none; /* Hide by default */
-    z-index: 10;
-}
-
-.zoom-preview.visible {
-    display: block;
-}
-
-.product-logo:hover+.zoom-preview {
-    display: block;
-    /* Show zoom preview on hover */
-}
-
-.zoom-preview img {
-    position: absolute;
-    width: 300%;
-    /* Scale the image to create the zoom effect */
-    height: 300%;
-    object-fit: cover;
-}
 
 .product-detail {
     width: 140%;
@@ -95,6 +65,7 @@
 
 .product-detail-0 {
     display: flex;
+    
     justify-content: space-between;
     width: 100%;
 }

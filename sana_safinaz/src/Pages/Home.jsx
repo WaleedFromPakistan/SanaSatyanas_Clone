@@ -13,7 +13,7 @@ const Home = (props) => {
                 {
                     Product.map((item, index) => {
                         return (
-                            <Link to={`/home/${item.category}/`}> 
+                            <Link to={`/home/${item.category}/`} style={{color:"black", textDecoration:"none"}}> 
                             <Item 
                                 key={index}
                                 image={item.image} 

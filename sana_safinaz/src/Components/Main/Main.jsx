@@ -8,6 +8,7 @@ import ShopPage from '../../Pages/ShopPage';
 import LoginSignup from '../../Pages/LoginSignup';
 import ItemDetail from '../../Pages/ItemDetail';
 import Cart from '../../Pages/Cart';
+import DisplayPageDynamic from '../../Pages/DisplayPageDynamic'
 
 // Components
 import Card from '../Card/Card';
@@ -54,7 +55,7 @@ const Main = () => {
                                         <Route
                                             key={`dynamic-${index}-${subIndex}`}
                                             path={`/home/${prd.Category}/${subCategory.category}`}
-                                            element={<DisplayPage category={prd.sub_category} />}
+                                            element={<DisplayPageDynamic category={prd.sub_category} />}
                                         />
                                     ) : null
                                   )
