@@ -38,7 +38,7 @@
 //                 <h3>{prd.name}</h3>
 //                 <p>Availability: In Stock</p>
 //               </div>
-              
+
 
 //               <div className="product-detail-1">
 //                 <p className='id-1'>SKU#: {prd.sku}</p>
@@ -120,38 +120,48 @@ const ItemDetail = () => {
         .filter(prd => prd.id == id)
         .map((prd) => (
           <div className='item-detail' key={prd.id}>
-            <div className="product-images">
-              <img onMouseOver={() => setImage(prd.img1)} src={prd.img1} alt="" />
-              <img onMouseOver={() => setImage(prd.img2)} src={prd.img2} alt="" />
-              <img onMouseOver={() => setImage(prd.img3)} src={prd.img3} alt="" />
-            </div>
+            
+              <div className="product-images">
 
-            <div className="product-logo">
-              <div className="Discount"><strong>{prd.discount}% off</strong></div>
-              <img src={image} alt="Main Product" />
-            </div>
+                <img onMouseOver={() => setImage(prd.img1)} src={prd.img1} alt="" />
+                <img onMouseOver={() => setImage(prd.img2)} src={prd.img2} alt="" />
+                <img onMouseOver={() => setImage(prd.img3)} src={prd.img3} alt="" />
+                <img onMouseOver={() => setImage(prd.img4)} src={prd.img4} alt="" />
+                <img onMouseOver={() => setImage(prd.img5)} src={prd.img5} alt="" />
+              </div>
 
+              <div className="product-logo">
+                <div className="Discount"><strong>{prd.discount}% off</strong></div>
+                <img src={image} alt="Main Product" />
+              </div>
+            
             <div className="product-detail">
               <div className="product-detail-0">
-                <h3>{prd.name}</h3>
-                <p>Availability: In Stock</p>
+                <h2>{prd.name}</h2>
+                <p>Availability:<span style={{ color: prd.available === 'Available' ? "green" : "red" }}> {prd.available === 'Available' ? "In Stock" : "Out of Stock"}</span></p>
               </div>
 
               <div className="product-detail-1">
-                <p className='id-1'>SKU#: {prd.sku}</p>
+                <p className='id-1'>SKU#: {prd.title}</p>
                 <p className='id-2'><i className="fa-regular fa-heart"></i> Add To Wish List</p>
               </div>
 
               <div className="product-detail-2">
                 <p><strong>Description:</strong> {prd.description}</p>
-                <p><strong>Color:</strong> {prd.color}</p>
-                <p><strong>Fabric:</strong> {prd.fabric}</p>
-                <p><strong>Cut:</strong> {prd.cut}</p>
+                <p><strong>Material:</strong> {prd.material}</p>
+
               </div>
 
               <div className='product-detail-3'>
-                <span className='id-3'><strong>PKR {prd.price}</strong></span>
-                <span className='id-4'>PKR {prd.originalPrice}</span>
+                <span className='id-3'>Price: PKR {prd.new_price}</span>
+                <span className='id-4'>PKR {prd.old_price}</span>
+              </div>
+
+              <div className='product-detail-4'>
+                <div className='delivery_note'>
+                  <h3>Delivery Note</h3>
+                  <p>{prd.delivery_note}</p>
+                </div>
               </div>
 
               <div className="product-detail-7">

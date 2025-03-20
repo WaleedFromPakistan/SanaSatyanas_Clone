@@ -22,7 +22,7 @@ const DisplayPageDynamic = () => {
             <Banner className='Banner'
               banner={product.back_image}
               height='550px'
-              title={product.name} />
+              title={''} />
             <div className="Main-Body">
              <Link 
               to={`/item-detail/${product.id}`}

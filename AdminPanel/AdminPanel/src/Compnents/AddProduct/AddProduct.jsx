@@ -6,6 +6,7 @@ const AddProduct = () => {
     const [formData, setFormData] = useState({
         name: '',
         title: '',
+        back_image:'',
         img_main: '',
         img1: '',
         img2: '',
@@ -51,6 +52,7 @@ const AddProduct = () => {
                 setFormData({
                     name: '',
                     title: '',
+                    back_image:'',
                     img_main: '',
                     img1: '',
                     img2: '',
@@ -99,6 +101,10 @@ const AddProduct = () => {
                 <div className="col-md-5">
                     <label htmlFor="title" className="form-label">Title</label><span>*</span>
                     <input type="text" name='title' onChange={handleChange} value={formData.title} className="form-control" id="title" required />
+                </div>
+                <div className="col-md-4">
+                    <label htmlFor="back_img" className="form-label">Background Image (URL)</label><span>*</span>
+                    <input type="text" className="form-control" id="back_image" name='back_image' value={formData.back_image} onChange={handleChange} required />
                 </div>
                 <div className="col-md-4">
                     <label htmlFor="img_main" className="form-label">Image Main (URL)</label><span>*</span>
