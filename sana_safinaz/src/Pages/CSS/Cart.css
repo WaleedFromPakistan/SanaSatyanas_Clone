@@ -31,6 +31,12 @@
 }
 .cart-left-cart-item-CRUD{
     display: flex;
+
+}
+.cart-left-cart-item-CRUD button{
+    display: flex;
+    height: 27px;
+    
 }
 .cart-left-cart-item-image > img{
     width: 130px;

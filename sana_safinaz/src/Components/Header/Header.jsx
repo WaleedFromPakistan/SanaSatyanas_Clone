@@ -13,11 +13,14 @@ import flag_uk from '../../assets/flag_uk.png';
 import flag_us from '../../assets/flag_us.webp';
 import logo from '../../assets/LOGO.png';
 //import SideBar from '../sideBar/sideBar';
+import { ShopContext } from '../Context/Context';
+import { useContext } from 'react';
 
 
 //import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 
 const Header = ({ toggleSidebar }, props) => {
+  const {cart } = useContext(ShopContext);
   const [dropImage, setdropIMage] = useState(flag_pak)
   const [hContact, sethContact] = useState('UAN/WhatsApp: 021-111-003-005')
   const [count, setCount] = useState(0)
@@ -128,7 +131,7 @@ const Header = ({ toggleSidebar }, props) => {
 
 
           <div className='header-lower-right-cart'>
-            <p className='counter'>{count}</p>
+            <p className='counter'>{cart.length}</p>
             <a href='/cart'> <svg xmlns="http://www.w3.org/2000/svg" width='30px' height='30px' fill="black" className="bi bi-cart3" viewBox="0 0 16 16">
               <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
             </svg></a>

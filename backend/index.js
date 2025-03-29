@@ -85,10 +85,10 @@ const productSchema = new mongoose.Schema({
         type:String
     },
     old_price: {
-        type: String
+        type: Number
     },
     new_price: {
-        type: String,
+        type: Number,
         requred: true
     },
     available: {
@@ -177,8 +177,36 @@ const productSchema2 = new mongoose.Schema({
     }
 })
 
+const new_Orders= new mongoose.Schema({
+    id:{
+        type: Number,
+        required:true
+    },
+    user_id:{
+        type: String,
+    },
+    item:{
+        type: Array,
+        required:true
+    },
+    date:{
+        type: Date,
+        default: Date.now
+    },
+    status:{
+        type: String,
+        required:true
+    },
+    total:{
+        type: Number,
+        required:true
+    }
+})
+
+
 const Product = mongoose.model('Accessories', productSchema);
 const Clothing = mongoose.model('Clothing' , productSchema2);
+const Orders= mongoose.model('Order', new_Orders );
 
 //API for add Accessories
 app.post('/addAccessories', async (req, res) => {
@@ -364,7 +392,6 @@ app.post('/remClothing', async (req, res) => {
     }
 })
 
-
 //API to list all Clothing
 app.get('/all-Clothings', async (req, res) => {
     try {
@@ -385,8 +412,158 @@ app.get('/all-Clothings', async (req, res) => {
 
 
 
-app.listen(port, () => {
-    console.log(`Server is runnig on port: ${port}`);
+app.post('/checkout', async (req, res) => {
+    try {
+        const last_order = await Orders.findOne({}).sort({ id: -1 });
+
+        let id = last_order ? last_order.id + 1 : 1;
+
+        const new_Order = new Orders({
+            id: id,
+            user_id:'TBD',
+            date: new Date(Date.now()).toLocaleDateString('us-en',{year:'numeric',month:'2-digit' , day:'2-digit' }),
+            total:req.body.total,
+            status: "Pending",
+            item:req.body.item
+
+        })
+
+        await new_Order.save();
+        console.log("New Order Recieved:", new_Order);
+        res.status(200).json({
+            success: true,
+            message: "New Order Recieved",
+            Orders: new_Order
+        });
+    }
+    catch (error) {
+        console.log("Something went wrong", error);
+        res.status(500).json({ success: false, message: "Failed to add Product" });
+
+    }
+})
+
+app.get('/all-orders', async (req, res)=>{
+    try{
+        let orders = await Orders.find({});
+        console.log("All Orders:\n", orders);
+        res.json(orders)
+    }
+    catch(error)
+    {
+        console.error("Some error there");
+        res.status(500).json({
+            success: false,
+            message: "Failed to fetch orders"
+        })
+    }
+})
+
+app.get('/all-pending-orders', async (req, res)=>{
+    try{
+        let pendingOrders = await Orders.find({status:'Pending'});
+        console.log("All Pending Orders:\n", pendingOrders);
+        res.json(pendingOrders);
+    }
+    catch(error)
+    {
+        console.error("Some error there");
+        res.status(500).json({
+            success: false,
+            message: "Failed to fetch orders"
+        })
+    }
+})
+
+app.post('/update-status', async (req, res) => {
+    const { id } = req.body; // Extract order ID from the request body
+
+    if (!id) {
+        return res.status(400).json({
+            success: false,
+            message: "Order ID is required"
+        });
+    }
+
+    try {
+        // Find the order and update its status to 'dispatch'
+        const updatedOrder = await Orders.findOneAndUpdate(
+            { id }, // Find the order by its ID
+            { status: 'Dispatch' }, // Update the status field to 'dispatch'
+            { new: true } // Return the updated document
+        );
+
+        if (updatedOrder) {
+            console.log("Order updated successfully:", updatedOrder);
+            res.status(200).json({
+                success: true,
+                message: `Order ID ${id} status updated to 'dispatch'`,
+                updatedOrder
+            });
+        } else {
+            console.log("Order not found with ID:", id);
+            res.status(404).json({
+                success: false,
+                message: `Order with ID ${id} not found`
+            });
+        }
+    } catch (error) {
+        console.error("Error in updating order status:", error);
+        res.status(500).json({
+            success: false,
+            message: "Failed to update order status",
+            error: error.message
+        });
+    }
+});
+
+app.get('/all-dispatch-orders', async (req, res)=>{
+    try{
+        let pendingOrders = await Orders.find({status:"Dispatch"});
+        console.log("All Dispatch Orders:\n", pendingOrders);
+        res.json(pendingOrders);
+        
+    }
+    catch(error)
+    {
+        console.error("Some error there");
+        res.status(500).json({
+            success: false,
+            message: "Failed to fetch orders"
+        })
+    }
+})
+
+app.post('/remOrder', async (req, res) => {
+    try {
+        const result = await Orders.findOneAndDelete({ id: req.body.id });
+        if (result) {
+            console.log("Order deleted", result);
+            res.status(200).json({
+                success: true,
+                message: "The Order is removed",
+                title: result.id
+            })
+
+        }
+        else {
+            console.log("Something went wrong");
+            res.status(500).json({
+                success: false,
+                message: "The Order is not removed"
+            })
+        }
+    }
+    catch (error) {
+        console.log("Error occuring in removing Order", error);
+        res.status(500).json({
+            success: false,
+            message: "The error is: " + error
+        })
+    }
 })
 
 
+app.listen(port, () => {
+    console.log(`Server is runnig on port: ${port}`);
+})

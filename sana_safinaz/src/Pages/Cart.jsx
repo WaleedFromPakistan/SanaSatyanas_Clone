@@ -1,9 +1,54 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import './CSS/Cart.css';
 import { ShopContext } from '../Components/Context/Context';
 
 function Cart() {
-    const { cart, removeItem, getTotalCartAmount, addToCart } = useContext(ShopContext);
+    const { cart, removeItem, getTotalCartAmount, addToCart , clearCart } = useContext(ShopContext);
+    const [order, setOrder] = useState({
+        user_id: 'TBD',
+        date: '',
+        total: getTotalCartAmount(),
+        status: "Pending",
+        item: [cart]
+    })
+
+    const addOrder = async () => {
+        try {
+            const reponse = await fetch('http://localhost:4000/checkout', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(order)
+            });
+            const order_data = await reponse.json();
+            if (order_data.success) {
+                alert('new order recieved');
+                setOrder({
+                    id: 0,
+                    user_id: '',
+                    date: '',
+                    total: 0,
+                    status: '',
+                    item: []
+                })
+            }
+            else {
+                alert('error');
+            }
+        }
+        catch (error) {
+            alert('Something went wrong');
+        }
+    }
+    const handleCheckout = (e) => {
+        e.preventDefault();
+        console.log(order);
+        addOrder();
+        clearCart()
+        
+    }
 
     return (
         <div className='cart'>
@@ -65,7 +110,7 @@ function Cart() {
                         </div>
                     </div>
                     <div className='cart-right-checkout-btn'>
-                        <button>PROCEED TO CHECKOUT</button>
+                        <button onClick={handleCheckout}>PROCEED TO CHECKOUT</button>
                     </div>
                 </div>
             </div>

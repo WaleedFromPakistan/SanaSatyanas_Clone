@@ -92,6 +92,10 @@ const ShopContextProvider = (props) => {
         return cart.reduce((total, item) => total + item.quantity, 0);
     };
 
+    const clearCart = () => {
+        setCart([]);
+    };
+    
     const contextValue = {
         cart,
         products,
@@ -99,6 +103,7 @@ const ShopContextProvider = (props) => {
         removeItem,
         getTotalCartAmount,
         getTotalItem,
+        clearCart
     };
 
     return (
