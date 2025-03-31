@@ -1,5 +1,5 @@
 .header{
-    height: 130px;
+    height: 100px;
     width: 100%;
     background: #FFFFFF;
     
@@ -7,7 +7,7 @@
 .header-upper{
     width: 100%;
     background: #BBBBBB;
-    height: 20%;
+    height: 25%;
 }
 .header-upper p{
     font-size: 12px;
@@ -29,7 +29,7 @@
 }
 .header-lower-left > .header-lower-left-burger-btn {
    padding-top: 30px;
-    padding-left: 68px;
+    padding-left: 30px;
 }
 .header-lower-left-burger-btn :hover{
     cursor: pointer;

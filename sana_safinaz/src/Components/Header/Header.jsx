@@ -102,8 +102,8 @@ const Header = ({ toggleSidebar }, props) => {
             <p>Whatsapp</p>
           </div>
           <div className='header-lower-right-tracking'>
-            <img id='tracking' width='30px' height='30px' src='https://www.sanasafinaz.com/static/version1728245196/frontend/RLTSquare/SanaSafinaz/en_US/images/Svg/Shipping.SVG'
-              alt='' />
+            <a href='/tracking'> <img id='tracking' width='30px' height='30px' src='https://www.sanasafinaz.com/static/version1728245196/frontend/RLTSquare/SanaSafinaz/en_US/images/Svg/Shipping.SVG'
+              alt='' /></a>
             <p>Tracking</p>
           </div>
 

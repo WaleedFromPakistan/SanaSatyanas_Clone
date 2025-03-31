@@ -9,16 +9,16 @@ import minus from '../../assets/minus.svg';
 
 const SideBar = () => {
     const [isMenuVisible, setMenuVisible] = useState({
-        Home: false,
-        Accessories: false,
-        Clothing: false,
-        Orders:false
+        Home: true,
+        Accessories: true,
+        Clothing: true,
+        Orders:true
     });
 
     const toggleMenu = (menu) => {
-        setMenuVisible((prevState) => ({
-            ...prevState, [menu]: !prevState[menu],
-        }));
+        // setMenuVisible((prevState) => ({
+        //     ...prevState, [menu]: !prevState[menu],
+        // }));
     };
 
     const location = useLocation();

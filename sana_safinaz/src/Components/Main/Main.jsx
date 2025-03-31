@@ -22,6 +22,7 @@ import Banner from '../../assets/home-main-banner.webp';
 import ScrollToTop from '../ScrollTop/scrollTop';
 // Context
 import { ShopContext } from '../Context/Context';
+import Tracking from '../../Pages/Tracking';
 
 const Main = () => {
     const { products } = useContext(ShopContext);
@@ -78,6 +79,9 @@ const Main = () => {
 
                     {/* Cart Page */}
                     <Route path='/cart' element={<Cart />} />
+                    
+                    {/* Tracking */}
+                    <Route path='/tracking' element={<Tracking/>}/>
                 </Routes>
 
                 {/* Scroll to Top Button */}

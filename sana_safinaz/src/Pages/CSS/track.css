@@ -1,0 +1,19 @@
+.tracking{
+    padding-top: 5%;
+}
+.input-main{
+
+    width: 50%;
+    margin-left: 26%;
+}
+.p{
+    font-style: italic;
+    font-size: small;
+    color: red;
+}
+.track-comment{
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    color: green;
+}
