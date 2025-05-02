@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const cors = require('cors');
-const jwt = require('jsonwebtoken');
+//const jwt = require('jsonwebtoken');
 
 const port = 4000;
 
@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cors());
 
 //API to connect with MongodB
-const MONGO_URI = "mongodb+srv://mw8867861:P%40kistan11@cluster0.gdd8q.mongodb.net/SanaSafinaz(Clone)";
+const MONGO_URI = "mongodb+srv://mw8867861:PAkistan11@cluster0.gdd8q.mongodb.net/SanaSafinaz(Clone)";
 mongoose.connect(MONGO_URI, {
 
 })

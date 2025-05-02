@@ -1,43 +1,28 @@
-import Header from './Components/Header/Header';
-import { useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import SideBar from './Components/sideBar/sideBar';
-import Footer from './Components/Footer/Footer';
-import Home from '../src/Pages/Home';
-import DisplayPage from './Pages/DisplayPage';
-import LoginSignup from './Pages/LoginSignup';
-import Card from './Components/Card/Card';
-import ScrollButton from './Components/ScrollButton/ScrollButton';
-import ItemDetail from './Pages/ItemDetail';
-import Main from './Components/Main/Main';
-import Banner from '../src/assets/home-main-banner.webp';
-import Product from '../src/assets/Product.json';
-
+import SplashScreen from './Components/SplashScreen/SplashScreen';
+import { useState, useEffect } from 'react';
+import AppContent from './Components/AppContent/AppContent';
 function App() {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-  };
+  
+  const [isLoading , setLoading] = useState(false);
+  const [showSplash, setShowSplash] = useState(true);
+  //const location = useLocation();
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowSplash(false);
+    }, 1000); // Splash duration in milliseconds
 
-  const closeSidebar = () => {
-    setIsSidebarOpen(false);
-  };
+    return () => clearTimeout(timer);
+  }, []);
 
+  useEffect(() => {
+    console.log('URL changed to:', location.pathname);
+    <h1>Loading...</h1>
+  }, [location]);
   return (
     <>
+        {showSplash ? <SplashScreen /> : <AppContent />}
 
-      <Header toggleSidebar={toggleSidebar} />
-      {isSidebarOpen && (
-        <SideBar
-          state={isSidebarOpen}
-          onClose={closeSidebar}
-        />
-      )}     
-       <Main state={isSidebarOpen} />
-
-
-      <Footer />
-
+      
     </>
   );
 }

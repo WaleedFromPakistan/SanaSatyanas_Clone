@@ -1,10 +1,9 @@
-import React, { useContext } from 'react';
+import  { useContext } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // Pages
 import Home from '../../Pages/Home';
 import DisplayPage from '../../Pages/DisplayPage';
-import ShopPage from '../../Pages/ShopPage';
 import LoginSignup from '../../Pages/LoginSignup';
 import ItemDetail from '../../Pages/ItemDetail';
 import Cart from '../../Pages/Cart';
@@ -13,6 +12,7 @@ import DisplayPageDynamic from '../../Pages/DisplayPageDynamic'
 // Components
 import Card from '../Card/Card';
 import ScrollButton from '../ScrollButton/ScrollButton';
+import OrderConfirm from '../OrderConfirm/OrderConfirm';
 
 // Assets
 import Product from '../../assets/Product1.json';
@@ -26,6 +26,7 @@ import Tracking from '../../Pages/Tracking';
 
 const Main = () => {
     const { products } = useContext(ShopContext);
+    
     console.log(products[0]);
     return (
         <div>
@@ -82,6 +83,7 @@ const Main = () => {
                     
                     {/* Tracking */}
                     <Route path='/tracking' element={<Tracking/>}/>
+                    <Route path='/order-confirmation' element={<OrderConfirm/>}/>
                 </Routes>
 
                 {/* Scroll to Top Button */}

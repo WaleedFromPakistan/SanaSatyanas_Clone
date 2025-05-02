@@ -11,33 +11,43 @@ const DisplayPageDynamic = () => {
   const path = location.pathname;
   const lastSegment = path.substring(path.lastIndexOf("/") + 1);
   const { products } = useContext(ShopContext);
-
+  const filterProducts = products.filter(
+    (product) => product.sub_category === lastSegment
+  );
   return (
-    <div >
-      {products
-        .filter((product) => product.sub_category === lastSegment) // ✅ Filter products correctly
-        .map((product, key) => (
-          <div key={key} className="DisplayPage-Products">
-
-            <Banner className='Banner'
-              banner={product.back_image}
-              height='550px'
-              title={''} />
-            <div className="Main-Body">
-             <Link 
-              to={`/item-detail/${product.id}`}
-              style={{color:"black", textDecoration:"none"}}
-             >
-             <Item className='Item'
-                image={product.img1}
-                title={product.name}
-                price={product.new_price}
-              />
-              </Link>
-            </div>
-
-          </div>
-        ))}
+    <div className="dynamic-display-main">
+      {!filterProducts.length === 0 ? (
+        <div className="no-products">
+          <h2>Product not available</h2>
+        </div>
+      ) : (
+        <div>
+          {filterProducts // ✅ Filter products correctly
+            .map((product, key) => (
+              <div key={key}>
+                <Banner
+                  className="Banner"
+                  banner={product.back_image}
+                  height="550px"
+                  title={""}
+                />
+                <div className="Main-Body">
+                  <Link
+                    to={`/item-detail/${product.id}`}
+                    style={{ color: "black", textDecoration: "none" }}
+                  >
+                    <Item
+                      className="Item"
+                      image={product.img1}
+                      title={product.name}
+                      price={product.new_price}
+                    />
+                  </Link>
+                </div>
+              </div>
+            ))}
+        </div>
+      )}
     </div>
   );
 };

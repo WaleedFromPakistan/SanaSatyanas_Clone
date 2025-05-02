@@ -134,50 +134,18 @@ function Cart() {
         removeItem, 
         getTotalCartAmount, 
         addToCart, 
-        clearCart 
     } = useContext(ShopContext);
-    const [order, setOrder] = useState({
-        user_id: user?.uid || 'TBD',
-        date: new Date().toISOString(),
-        total: getTotalCartAmount(),
-        status: "Pending",
-        items: [...cart]
-    });
+    
     const [checkoutError, setCheckoutError] = useState(null);
     const navigate = useNavigate();
 
-    const addOrder = async () => {
-        try {
-            const response = await fetch('http://localhost:4000/checkout', {
-                method: 'POST',
-                headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    ...order,
-                    user_id: user.uid
-                })
-            });
-            const order_data = await response.json();
-            if (order_data.success) {
-                alert('New order received');
-                clearCart();
-                navigate('/order-confirmation');
-            } else {
-                setCheckoutError('Failed to process order. Please try again.');
-            }
-        } catch (error) {
-            setCheckoutError('Something went wrong. Please try again later.');
-            console.error('Checkout error:', error);
-        }
-    };
-
+    
     const handleCheckout = (e) => {
         e.preventDefault();
         setCheckoutError(null);
 
         if (!user) {
+            alert('Please login to complete your purchase')
             navigate('/login', { 
                 state: { 
                     from: '/cart',
@@ -188,14 +156,8 @@ function Cart() {
         }
 
         // Update order with current cart data
-        setOrder(prev => ({
-            ...prev,
-            user_id: user.uid,
-            total: getTotalCartAmount(),
-            items: [...cart]
-        }));
-
-        addOrder();
+                navigate('/order-confirmation');
+       // addOrder();
     };
 
     return (

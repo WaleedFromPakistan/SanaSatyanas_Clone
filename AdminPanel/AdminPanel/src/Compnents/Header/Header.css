@@ -6,6 +6,7 @@
 }
 .Header  img{
     height: 50px;
+    margin-top: 5px;
     width: max-content;
 }
 .Header img:hover{
@@ -16,15 +17,11 @@
     margin-top: 0px;
 }
 .Header-heading{
-    margin-left: 45%;
+    margin-left: 49%;
+    margin-bottom: -8px;
 }
 .Header  h1{
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 300;
     font-family:'Times New Roman', Times, serif;
-}
-hr{
-    font-weight: 200;
-    color: grey;
-   
 }
